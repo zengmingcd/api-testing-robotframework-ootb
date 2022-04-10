@@ -52,11 +52,11 @@ Python+Robotframework
     - module: \[dir],以被测模块或者场景为维度组织测试集，包含测试用例、资源等。名字自定义，一般建议按照模块名称进行命名，比较通俗易懂。例如：account_management。一个项目下有多个module。
         - testSuite.robot: \[file],测试套件，module下一系列测试用例文件，一般以测试目标命名。例如register.robot。
             - testcase: \[content],测试用例文件，具体的测试用例。
-        - resource.txt: \[file],模块级资源文件，本模块自定义的一些关键字，变量等在此编写。在testSuite中以resource形式导入。一个module下面建议一个.
-            - keyword: \[content], 用户自定义关键字。
+        - resource.robot: \[file],模块级资源文件，本模块自定义的一些关键字，变量等在此编写。在testSuite中以resource形式导入。一个module下面建议一个.
+            - keywords: \[content], 用户自定义关键字。
     - resources: \[dir], 项目级资源文件，跨模块抽象的关键字、变量等均可以放到这里。
-        - user_keywords.txt: \[file], 项目级用户自定义关键字。
-        - configs.txt: \[file], 项目级的配置文件.
+        - user_keywords.robot: \[file], 项目级用户自定义关键字。
+        - configs.robot: \[file], 项目级的配置文件.
 
 - demo: demo目录，用于存放一些demo。复制于project目录。
 
