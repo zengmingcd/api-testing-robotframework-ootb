@@ -40,7 +40,8 @@ Python+Robotframework
     - \[content]: 代码内容
 
 - common: \[dir],存放通用方法，一般是较为底层的通用工具，建议有框架的维护者来操作。
-    - todo
+    - runner: \[dir], 存放运行脚本。
+    - reports: \[dir], 存放运行脚本执行后的报告文件，report.html+output.xml+log.html
 
 - user_utils: \[dir],各业务方用户自定义的工具方法、包括自定义keyword也可以放在这里管理。
     - todo
@@ -62,4 +63,7 @@ Python+Robotframework
 
 ### 常用命令
 - 启动测试：
+    1. 进入common/runner/目录
+    2. 授权 chmod u+x run.sh (仅第一次使用时需要操作)
+    3. 执行shell命令，运行所有case ./run.sh  
 - 
