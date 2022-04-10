@@ -1,0 +1,3 @@
+## This is a demo argument file for start a robot test.
+## You can modify the content as you want.
+--outputdir ../reports

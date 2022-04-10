@@ -41,6 +41,8 @@ Python+Robotframework
 
 - common: \[dir],存放通用方法，一般是较为底层的通用工具，建议有框架的维护者来操作。
     - runner: \[dir], 存放运行脚本。
+        - run.sh: \[file], 执行测试用例的脚本。默认执行所有。可以根据实际需要进行修改。
+        - runner_arguments.txt: \[file], 执行测试外部参数文件。可以根据实际需要进行修改。
     - reports: \[dir], 存放运行脚本执行后的报告文件，report.html+output.xml+log.html
 
 - user_utils: \[dir],各业务方用户自定义的工具方法、包括自定义keyword也可以放在这里管理。

@@ -1,9 +1,13 @@
 *** Settings ***
 Library               RequestsLibrary
+Resource    ../resources/configs.robot
 
 *** Test Cases ***
 
 Quick Get Request Test
+    Log  ${CURDIR}
+    ${host}  Get Host  ${ENV}
+    Log    ${host}
     ${response}=    GET  https://www.google.com/search
 
 Quick Get Request With Parameters Test
