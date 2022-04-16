@@ -69,3 +69,17 @@ Python+Robotframework
     2. 授权 chmod u+x run.sh (仅第一次使用时需要操作)
     3. 执行shell命令，运行所有case ./run.sh  
 - 
+
+
+### 常用功能
+- 根据命令行传入参数确定所要运行的环境/host等
+    - 参考：common/resources/env_keywords.robot 中的[Get Host]关键字
+
+- 根据账户类型，获取账号
+    - 参考：common/resources/env_keywords.robot 中的[Get User Account]关键字
+
+- 解析json
+    - 使用json.loads方法
+
+- json schema校验能力
+
