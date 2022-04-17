@@ -81,5 +81,8 @@ Python+Robotframework
 - 解析json
     - 使用json.loads方法
 
+- 数据驱动
+    - 使用template设计
+
 - json schema校验能力
 

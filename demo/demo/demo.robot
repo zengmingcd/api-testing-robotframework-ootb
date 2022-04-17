@@ -27,3 +27,10 @@ Test Get Account
     Log  ${id}
     ${token}  Get From Dictionary  ${account}  token
     Log  ${token}
+
+Test Template Get Account
+    [Template]  Get User Account
+    a1
+    a2
+    a3
+    a4
